@@ -1,0 +1,11 @@
+server:
+  port: 8080
+
+consulta-escribano:
+  ws:
+    url: https://servicios-testing.colegio-escribanos.org.ar:8444/nomina-escribanos-ws
+    subject: examen-tecnico
+    audience: nomina-escribanos-ws  
+    issuer: candidato-a
+    sign: TmjEcHP7SYmRZXvcf8GwT6msazF07cD46Zqq
+    role: EXTERNOS

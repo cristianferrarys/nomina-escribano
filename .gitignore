@@ -1,0 +1,12 @@
+.project
+.settings/
+.classpath
+.factorypath
+.springBeans
+.deployables
+.apt_generated
+.svn
+target/
+.orig
+bin/
+.checkstyle

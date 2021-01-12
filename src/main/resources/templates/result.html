@@ -1,0 +1,47 @@
+<div th:fragment="resul" class="container">
+	<table th:if="${escribano.nombre != null}" class="table table-striped">
+		<thead>
+			<tr>
+				<th scope="col">#</th>
+				<th scope="col">Datos</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<th scope="row">Nombre</th>
+				<td th:text="${escribano.nombre}"></td>
+			</tr>
+			<tr>
+				<th scope="row">Apellido</th>
+				<td th:text="${escribano.apellido}"></td>
+			</tr>
+			<tr>
+				<th scope="row">Matricula</th>
+				<td th:text="${escribano.matricula}"></td>
+			</tr>
+			<tr>
+				<th scope="row">telefono</th>
+				<td th:text="${escribano.telefono}"></td>
+			</tr>
+
+			<tr>
+				<th scope="row">Email</th>
+				<td th:text="${escribano.email}"></td>
+			</tr>
+			<tr>
+				<th scope="row">Estado</th>
+				<td th:text="${escribano.estado}"></td>
+			</tr>
+		</tbody>
+	</table>
+
+<div th:if="${escribano.cuil != null}" class="alert alert-warning" role="alert">
+  <h4 class="alert-heading">No se encontro Resultados!</h4>
+  <p th:text="'Cuil: ' + ${escribano.cuil}"></p>
+  <hr>
+  <p class="mb-0">No se encontro un escribano para la Cuil informada</p>
+</div>	
+	
+</div>
+
+
